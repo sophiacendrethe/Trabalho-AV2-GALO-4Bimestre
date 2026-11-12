@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galo | Atlético Mineiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">⚫⚪ GALO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#titulos">Títulos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#elenco">Elenco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cadastro">Mural</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="container text-center">
+            <div class="galo-symbol mx-auto">CAM</div>
+            <h1>Clube Atlético Mineiro</h1>
+            <p class="lead">Tradição, paixão e a força do Galo. <strong>Uma história que não para.</strong></p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap mb-4">
+                <span class="badge rounded-pill text-bg-light px-3 py-2">⚫ ALVINEGRO</span>
+                <span class="badge rounded-pill bg-dark border border-secondary px-3 py-2">🏆 TRADIÇÃO</span>
+            </div>
+            <a href="#historia" class="btn btn-light btn-lg">Conheça o Galo</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="historia" class="section">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <span class="tag">HISTÓRIA</span>
+                        <h2>Uma história alvinegra</h2>
+                        <p>O Clube Atlético Mineiro é um dos grandes clubes do futebol brasileiro. Fundado em Belo Horizonte, construiu uma identidade marcada pelo preto e branco e por uma torcida apaixonada.</p>
+                        <p>O Galo se tornou conhecido por sua tradição, por grandes jogadores e por conquistas importantes ao longo de sua história.</p>
+                        <button class="btn btn-dark" id="btnHistoria">Mostrar curiosidade</button>
+                        <div id="curiosidade" class="alert mt-3 d-none"></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="info-card">
+                            <h3>Identidade</h3>
+                            <div class="row text-center">
+                                <div class="col-4"><strong>CAM</strong><small>Sigla</small></div>
+                                <div class="col-4"><strong>GALO</strong><small>Mascote</small></div>
+                                <div class="col-4"><strong>⚫⚪</strong><small>Cores</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="titulos" class="section dark-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="tag light">CONQUISTAS</span>
+                    <h2>Alguns títulos marcantes</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="title-card"><span>🏆</span>
+                            <h3>Libertadores</h3>
+                            <p>2013</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="title-card"><span>🏆</span>
+                            <h3>Brasileirão</h3>
+                            <p>1971 • 2021</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="title-card"><span>🏆</span>
+                            <h3>Copa do Brasil</h3>
+                            <p>2014 • 2021</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="title-card"><span>🏆</span>
+                            <h3>Recopa</h3>
+                            <p>2014</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="elenco" class="section">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <span class="tag">ELENCO</span>
+                    <h2>Jogadores em destaque</h2>
+                    <p class="text-muted">Área demonstrativa do projeto. O conteúdo pode ser atualizado pelo aluno.</p>
+                </div>
+                <div class="row g-4" id="jogadores"></div>
+            </div>
+        </section>
+
+        <section id="cadastro" class="section form-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="form-card">
+                            <div class="text-center mb-4">
+                                <span class="tag">MURAL DO TORCEDOR</span>
+                                <h2>Deixe sua mensagem</h2>
+                                <p>Cadastre seu nome e sua mensagem para aparecer no mural.</p>
+                            </div>
+                            <form id="torcedorForm" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nome" class="form-label">Nome</label>
+                                        <input id="nome" class="form-control" type="text" placeholder="Seu nome">
+                                        <div class="invalid-feedback">Digite seu nome.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="idade" class="form-label">Idade</label>
+                                        <input id="idade" class="form-control" type="number" min="1" max="120" placeholder="Sua idade">
+                                        <div class="invalid-feedback">Informe uma idade válida.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="mensagem" class="form-label">Mensagem</label>
+                                        <textarea id="mensagem" class="form-control" rows="4" maxlength="180" placeholder="Escreva sua mensagem para o Galo"></textarea>
+                                        <div class="invalid-feedback">Digite uma mensagem.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-dark w-100" type="submit">Publicar no mural</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="feedback" class="mt-3"></div>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="h5 mb-0">Mensagens publicadas</h3>
+                                <button id="limparMural" class="btn btn-outline-secondary btn-sm">Limpar mural</button>
+                            </div>
+                            <div id="mural"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-1">⚫⚪ Galo — Projeto escolar de Desenvolvimento de Aplicação Web</p>
+            <small>HTML • CSS • Bootstrap • JavaScript</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
