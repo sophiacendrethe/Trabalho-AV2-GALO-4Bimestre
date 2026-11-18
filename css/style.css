@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root{
+  --preto:#0a0a0a;
+  --cinza:#171717;
+  --branco:#f5f5f5;
+  --prata:#bdbdbd;
+}
+*{scroll-behavior:smooth}
+body{font-family:'Roboto',Arial,sans-serif;background:#f4f4f4;color:#171717}
+.navbar{background:#050505;border-bottom:2px solid #333}
+.navbar-brand{letter-spacing:1px}
+.nav-link{font-weight:500}
+.hero{
+  min-height:78vh;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#050505 0%,#151515 55%,#2a2a2a 100%);
+  color:#fff;position:relative;overflow:hidden
+}
+.hero:after{content:"";position:absolute;width:420px;height:420px;border:80px solid rgba(255,255,255,.035);border-radius:50%;right:-160px;bottom:-190px}
+.hero h1{font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,6vw,5rem);margin:.6rem 0}
+.hero p{color:#ddd}
+.galo-symbol{
+  width:110px;height:110px;border:5px solid #fff;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-weight:900;
+  font-size:1.7rem;letter-spacing:-1px
+}
+.section{padding:90px 0}
+.dark-section{background:#0c0c0c;color:#fff}
+.tag{display:inline-block;font-size:.78rem;font-weight:900;letter-spacing:2px;border-left:4px solid #111;padding-left:9px;margin-bottom:12px}
+.tag.light{border-color:#fff}
+h2{font-size:clamp(1.9rem,4vw,3rem);font-weight:900;margin-bottom:18px}
+.info-card,.form-card{
+  background:#fff;border-radius:18px;padding:32px;box-shadow:0 12px 35px rgba(0,0,0,.09)
+}
+.info-card h3{font-weight:900;margin-bottom:28px}
+.info-card strong{display:block;font-size:1.2rem}
+.info-card small{display:block;color:#777;margin-top:5px}
+.title-card{
+  background:#171717;border:1px solid #333;border-radius:16px;padding:28px 18px;
+  height:100%;text-align:center;transition:.25s
+}
+.title-card:hover{transform:translateY(-6px);background:#222}
+.title-card span{font-size:2rem}
+.title-card h3{font-size:1.1rem;margin-top:15px;font-weight:800}
+.title-card p{color:#bbb;margin:0}
+.player-card{
+  background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.08);
+  height:100%;transition:.2s
+}
+.player-card:hover{transform:translateY(-4px)}
+.player-img{
+  height:190px;background:linear-gradient(135deg,#111,#555);
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:3.5rem;font-weight:900
+}
+.player-body{padding:22px}
+.player-body h3{font-size:1.25rem;font-weight:800;margin:0}
+.player-body p{color:#777;margin:.4rem 0 0}
+.form-section{background:#eaeaea}
+.form-card{max-width:850px;margin:auto}
+.form-control{border-radius:10px;padding:11px 13px}
+.btn-dark{background:#0b0b0b;border-color:#0b0b0b}
+.btn-dark:hover{background:#333;border-color:#333}
+.message{
+  border:1px solid #ddd;border-radius:12px;padding:14px;margin-bottom:12px;background:#fafafa
+}
+.message strong{display:block}
+.message small{color:#777}
+.footer{background:#050505;color:#bbb;padding:28px 0}
+@media(max-width:576px){
+  .section{padding:60px 0}
+  .hero{min-height:70vh}
+  .galo-symbol{width:85px;height:85px;font-size:1.35rem}
+}
+
+
+/* ===== Complementos AV2 ===== */
+.stats-strip{background:#fff;border-bottom:1px solid #ddd;box-shadow:0 8px 25px rgba(0,0,0,.06)}
+.stat-item{padding:25px 10px;border-right:1px solid #e4e4e4}
+.stat-item:last-child{border-right:0}
+.stat-item strong{display:block;font-size:1.6rem;font-weight:900;letter-spacing:.5px}
+.stat-item span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;color:#777;margin-top:4px}
+.idol-section{background:#fff}
+.idol-card{height:100%;padding:25px;border-radius:16px;background:linear-gradient(145deg,#111,#292929);color:#fff;box-shadow:0 12px 30px rgba(0,0,0,.13);transition:.25s}
+.idol-card:hover{transform:translateY(-6px)}
+.idol-number{font-size:2.7rem;font-weight:900;line-height:1;margin-bottom:18px;color:#ddd}
+.idol-card h3{font-weight:900;font-size:1.2rem}
+.idol-card p{color:#bbb;margin:0;line-height:1.6}
+.lineup-section{background:#efefef}
+.lineup-card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.player-option{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #eee}
+.player-option:last-child{border-bottom:0}
+.player-option .player-name{font-weight:800}
+.player-option small{display:block;color:#777}
+.player-option button{min-width:80px}
+.lineup-player{background:#111;color:#fff;border-radius:12px;padding:14px;position:relative}
+.lineup-player strong{display:block}
+.lineup-player small{color:#bbb}
+.remove-player{margin-top:9px}
+.empty-lineup{border:2px dashed #ccc;border-radius:12px;padding:25px;text-align:center;color:#777;width:100%}
+.badge{font-weight:700}
+@media(max-width:767px){
+  .stat-item:nth-child(2){border-right:0}
+  .stat-item{border-bottom:1px solid #e4e4e4}
+}
+
+.roster-filter{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.filtro-posicao{border-radius:999px}
+.filtro-posicao.active{background:#0b0b0b;color:#fff}
+.player-img{position:relative}
+.player-img::after{content:"GALO";position:absolute;right:12px;bottom:10px;font-size:.65rem;letter-spacing:1px;color:#aaa;font-weight:900}
